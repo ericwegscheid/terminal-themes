@@ -1,4 +1,4 @@
-# .terminal-themes
+# terminal-themes
 
 This repository makes it easy to apply terminal themes.
 
