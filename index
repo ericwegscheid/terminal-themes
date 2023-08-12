@@ -1,0 +1,38 @@
+#!/usr/bin/env zsh
+
+
+_themes_dir="$HOME/.terminal-themes"
+_themes=()
+for file in $_themes_dir/themes/*.yml; do 
+  if [[ -f "$file" ]]; then
+    _themes+=($(echo "${file// /_}" | sed 's/^.*themes\///g' | sed 's/\.yml$//g' | awk '{print tolower($0)}'))
+  fi
+done
+
+_theme_get_color_palette() {
+  echo "ColorPalette=$(cat $1 | grep '^color_' | awk '{print $2}' | sed "s/'//g" | tr '\n' ';')"
+}
+_theme_get_color_background() {
+  echo "ColorBackground=$(cat $1 | grep '^background' | awk '{print $2}' | sed "s/'//g")"
+}
+_theme_get_color_foreground() {
+  echo "ColorForeground=$(cat $1 | grep '^foreground' | awk '{print $2}' | sed "s/'//g")"
+}
+_theme_get_color_cursor() {
+  echo "ColorCursor=$(cat $1 | grep '^foreground' | awk '{print $2}' | sed "s/'//g")"
+}
+
+theme() {
+  file="$_themes_dir/themes/$(echo $1 | sed 's/_/ /g' | sed -e 's/\b\(.\)/\u\1/g').yml"
+  sed -i "s/^ColorPalette=.*/$(_theme_get_color_palette $file)/" ~/.config/xfce4/terminal/terminalrc
+  sed -i "s/^ColorBackground=.*/$(_theme_get_color_background $file)/" ~/.config/xfce4/terminal/terminalrc
+  sed -i "s/^ColorForeground=.*/$(_theme_get_color_foreground $file)/" ~/.config/xfce4/terminal/terminalrc
+  # sed -i "s/^ColorCursor=.*/$(_theme_get_color_cursor $file)/" ~/.config/xfce4/terminal/terminalrc
+}
+
+_theme_complete() {
+  local completions="$(echo $_themes)"
+  reply=( $(compgen -W ${completions[@]} -- $1) )
+}
+
+compctl -f -K _theme_complete theme
