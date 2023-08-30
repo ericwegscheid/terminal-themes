@@ -6,13 +6,16 @@ This repository makes it easy to apply terminal themes.
 
 Works simply by updating the `ColorPalette=`, `ColorBackground`, etc. of the `~/.config/xfce4/terminal/termincalrc` file.
 
-### Install
 
-To install add this to your `.bashrc`, `.zshrc`, `.profile`, etc.
+## Install
 
 ```
-source /path/to/terminal-themes/index
+git checkout https://github.com/ericwegscheid/terminal-themes.git;
+cd ./terminal-themes/
+chmod +x install.sh
+./install.sh <path_to_run_command_file_or_shell_initialization_script>
 ```
+
 
 ### Usage
 
