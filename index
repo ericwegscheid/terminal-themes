@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 
-_themes_dir="$HOME/.terminal-themes"
+_themes_dir="$HOME/Git/github.com/ericwegscheid/terminal-themes"
 _themes=()
 for file in $_themes_dir/themes/*.yml; do 
   if [[ -f "$file" ]]; then
