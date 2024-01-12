@@ -1,0 +1,25 @@
+---
+name: 'Fire Team Charlie'
+
+color_01: '#1E1F17'    # Black (Host)
+color_02: '#8B4F3E'    # Red (Syntax string)
+color_03: '#6E7D5C'    # Green (Command)
+color_04: '#8D8267'    # Yellow (Command second)
+color_05: '#3E5E5C'    # Blue (Path)
+color_06: '#6B7355'    # Magenta (Syntax var)
+color_07: '#6F7874'    # Cyan (Prompt)
+color_08: '#9E958D'    # White
+
+color_09: '#262B22'    # Bright Black
+color_10: '#AB3D3B'    # Bright Red (Command error)
+color_11: '#7D8C78'    # Bright Green (Exec)
+color_12: '#A97F5C'    # Bright Yellow
+color_13: '#50637A'    # Bright Blue (Folder)
+color_14: '#5E6C4C'    # Bright Magenta
+color_15: '#67706C'    # Bright Cyan
+color_16: '#7A736D'    # Bright White
+
+background: '#1F291D'  # Background
+foreground: '#958C83'  # Foreground (Text)
+
+cursor: '#B68C83'      # Cursor

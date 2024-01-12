@@ -1,0 +1,25 @@
+---
+name: '3rd Platoon'
+
+color_01: '#201717'    # Black (Host)
+color_02: '#9E503E'    # Red (Syntax string)
+color_03: '#858B62'    # Green (Command)
+color_04: '#AA7549'    # Yellow (Command second)
+color_05: '#324A69'    # Blue (Path)
+color_06: '#77323C'    # Magenta (Syntax var)
+color_07: '#787A6C'    # Cyan (Prompt)
+color_08: '#A69C93'    # White
+
+color_09: '#282222'    # Bright Black
+color_10: '#BE302E'    # Bright Red (Command error)
+color_11: '#85A172'    # Bright Green (Exec)
+color_12: '#CA9549'    # Bright Yellow
+color_13: '#4A5574'    # Bright Blue (Folder)
+color_14: '#87424C'    # Bright Magenta
+color_15: '#888A7C'    # Bright Cyan
+color_16: '#867C73'    # Bright White
+
+background: '#20111B'  # Background
+foreground: '#968C83'  # Foreground (Text)
+
+cursor: '#B68C83'      # Cursor

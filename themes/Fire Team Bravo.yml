@@ -1,0 +1,25 @@
+---
+name: 'Fire Team Bravo'
+
+color_01: '#1A1C27'    # Black (Host)
+color_02: '#8B4F3E'    # Red (Syntax string)
+color_03: '#6B738D'    # Green (Command)
+color_04: '#8D6E67'    # Yellow (Command second)
+color_05: '#3E5E88'    # Blue (Path)
+color_06: '#653B4A'    # Magenta (Syntax var)
+color_07: '#69706F'    # Cyan (Prompt)
+color_08: '#9E958D'    # White
+
+color_09: '#262931'    # Bright Black
+color_10: '#AB3D3B'    # Bright Red (Command error)
+color_11: '#738D85'    # Bright Green (Exec)
+color_12: '#A97F5C'    # Bright Yellow
+color_13: '#506387'    # Bright Blue (Folder)
+color_14: '#7C4A56'    # Bright Magenta
+color_15: '#7E8076'    # Bright Cyan
+color_16: '#7A736D'    # Bright White
+
+background: '#000000'  # Background
+foreground: '#958C83'  # Foreground (Text)
+
+cursor: '#B68C83'      # Cursor
