@@ -21,7 +21,8 @@ color_15: '#01B3A8'    # Bright Cyan
   # color_16: '#8793B3'    # Bright White
 color_16: '#8088A9'    # Bright White
 
-background: '#101010'  # Background
+background: '#131519'  # Background
+  # background: '#101010'  # Background
 foreground: '#A0ABC4'  # Foreground (Text)
 
 cursor: '#FF3B52'      # Cursor
