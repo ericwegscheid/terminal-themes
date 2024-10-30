@@ -1,28 +1,25 @@
 ---
 name: 'Two Dark'
 
-color_01: '#101010'    # Black (Host)
-color_02: '#CB3853'    # Red (Syntax string)
-color_03: '#2E75A0'    # Green (Command)
-color_04: '#279C72'    # Yellow (Command second)
-color_05: '#005FD7'    # Blue (Path)
-color_06: '#5F5FFF'    # Magenta (Syntax var)
-color_07: '#0087AF'    # Cyan (Prompt)
-  # color_08: '#636876'    # White
-color_08: '#B7C3E3'    # White
+color_01: '#101010'    # black
+color_02: '#CB3853'    # red
+color_03: '#2E75A0'    # green
+color_04: '#279C72'    # yellow
+color_05: '#005FD7'    # blue
+color_06: '#5F5FFF'    # magenta
+color_07: '#0087AF'    # cyan
+color_08: '#B7C3E3'    # light gray
 
-color_09: '#17171B'    # Bright Black
-color_10: '#FF3B52'    # Bright Red (Command error)
-color_11: '#00FF87'    # Bright Green (Exec)
-color_12: '#DCE876'    # Bright Yellow
-color_13: '#0087FF'    # Bright Blue (Folder)
-color_14: '#925FFF'    # Bright Magenta
-color_15: '#01B3A8'    # Bright Cyan
-  # color_16: '#8793B3'    # Bright White
-color_16: '#8088A9'    # Bright White
+color_09: '#17171B'    # dark gray
+color_10: '#FF3B52'    # bright red
+color_11: '#00FF87'    # bright green
+color_12: '#E2E18D'    # bright yellow
+color_13: '#0087FF'    # bright blue
+color_14: '#925FFF'    # bright magenta
+color_15: '#01B3A8'    # bright cyan
+color_16: '#707899'    # white
 
-background: '#131519'  # Background
-  # background: '#101010'  # Background
-foreground: '#A0ABC4'  # Foreground (Text)
+background: '#131519'  # background
+foreground: '#909BB4'  # default
 
-cursor: '#FF3B52'      # Cursor
+cursor: '#FF3B52'      # cursor
