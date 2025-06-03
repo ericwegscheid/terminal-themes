@@ -35,3 +35,13 @@ _theme_complete() {
 }
 
 compctl -f -K _theme_complete theme
+
+theme_scan() {
+  echo $_themes |
+    tr ' ' '\n' |
+    while read t; do
+      theme $t;
+      echo "theme --> $t" 
+      sleep 1;
+    done
+}
